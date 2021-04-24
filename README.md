@@ -1,5 +1,7 @@
 # Embedded C Programming Examples with Continuous Integration and Code Quality
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/7135a8f0690043f4801ac7f60c51274d)](https://app.codacy.com/gh/259819/LnT_embeddedC?utm_source=github.com&utm_medium=referral&utm_content=259819/LnT_embeddedC&utm_campaign=Badge_Grade_Settings)
+
 ## Activity 1 In Action
 
 |OFF-OFF|OFF-ON|ON-OFF|ON-ON|
