@@ -2,15 +2,9 @@
 
 |ON|OFF|
 |:--:|:--:|
-|\image html ON.png||
+|![](https://github.com/259819/LnT_embeddedC/blob/master/simulation/on-on.PNG)|![](https://github.com/259819/LnT_embeddedC/blob/master/simulation/off.PNG)|
 
 ## Code 
 ```
-	for(;;)
-	{
-        change_led_state(HIGH);
-		delay_ms(LED_ON_TIME);
-        change_led_state(LOW);
-		delay_ms(LED_OFF_TIME);	
-	}
+	
 ```
