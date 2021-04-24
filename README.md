@@ -1,6 +1,6 @@
 # Embedded C Programming Examples with Continuous Integration and Code Quality
 
-# Activity - 1 
+
 
 ## In Action
 
@@ -15,4 +15,4 @@
 |To be added|To be added|To be added|
 
 ## Wiki Documentation
-* System [SETUP](https://github.com/DhyeyaPatel/Embedded-C.git)
+* System [SETUP](https://github.com/259819/LnT_embeddedC.git)
