@@ -15,4 +15,4 @@
 |To be added|To be added|To be added|
 
 ## Wiki Documentation
-* System [SETUP](https://github.com/259819/LnT_embeddedC.git)
+* System   [SETUP](https://github.com/259819/LnT_embeddedC.git)
