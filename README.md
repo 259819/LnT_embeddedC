@@ -4,7 +4,7 @@
 
 |OFF-OFF|OFF-ON|ON-OFF|ON-ON|
 |:--:|:--:|:--:|:--:|
-|![off-off](https://github.com/259819/LnT_embeddedC/blob/master/simulation/off-off.PNG)|![OFF-ON](https://github.com/259819/LnT_embeddedC/blob/master/simulation/off-on.PNG)|![on-off](https://github.com/259819/LnT_embeddedC/blob/master/simulation/on-off.PNG)|![on-on](https://github.com/259819/LnT_embeddedC/blob/master/simulation/on-on.PNG)|
+|![off-off](https://github.com/259819/LnT_embeddedC/blob/main/simulation/off-off.PNG)|![OFF-ON](https://github.com/259819/LnT_embeddedC/blob/main/simulation/off-on.PNG)|![on-off](https://github.com/259819/LnT_embeddedC/blob/main/simulation/on-off.PNG)|![on-on](https://github.com/259819/LnT_embeddedC/blob/main/simulation/on-on.PNG)|
 
 ## CI and Code Quality
 
