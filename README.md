@@ -6,7 +6,7 @@
 |:--:|:--:|:--:|:--:|
 |![off-off](https://github.com/259819/LnT_embeddedC/blob/master/simulation/off-off.PNG)|![OFF-ON](https://github.com/259819/LnT_embeddedC/blob/master/simulation/off-on.PNG)|![on-off](https://github.com/259819/LnT_embeddedC/blob/master/simulation/on-off.PNG)|![on-on](https://github.com/259819/LnT_embeddedC/blob/master/simulation/on-on.PNG)|
 
-#### CI and Code Quality
+## CI and Code Quality
 
 |Build|Cppcheck|Codacy|
 |:--:|:--:|:--:|
