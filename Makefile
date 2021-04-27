@@ -4,6 +4,7 @@ BUILD_DIR = build
 
 # All Source code files
 SRC = main.c\
+	./src/port.c
 
 
 # All header file paths
