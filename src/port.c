@@ -1,7 +1,7 @@
 /**
  * @file port.c
  * @author Preet Kamalnayan Pandit (https://github.com/259819/LnT_embeddedC.git)
- * @brief 
+ * @brief  source file for port initialization
  * @version 0.1
  * @date 2021-04-27
  * 
