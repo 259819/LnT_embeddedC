@@ -11,6 +11,7 @@
 
 #include <avr/io.h>
 #include<util/delay.h>
+#include"./inc/port.h"
 
 void port();
 int main(void)
