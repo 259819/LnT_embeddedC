@@ -39,19 +39,19 @@ int main(void)
         }
            if(OCR0A<=52)
            {
-               Activity4("20 degree Celcius");
+               Activity4("20 degree Celcius\n");
            }
-           else if(OCR0A>52 && OCR0A<=103)
+           else if(OCR0A<=103)
            {
-              Activity4("30 degree Celcius");
+              Activity4("30 degree Celcius\n");
            }
-            else if(OCR0A>103 && OCR0A<=180)
+            else if(OCR0A<=180)
            {
-               Activity4("40 degree Celcius");
+               Activity4("40 degree Celcius\n");
            }
-           else if(OCR0A>180 && OCR0A<=244)
+           else if(OCR0A<=244)
            {
-               Activity4("50 degree Celcius");
+               Activity4("50 degree Celcius\n");
            }
         
     }
