@@ -4,11 +4,14 @@ BUILD_DIR = build
 
 # All Source code files
 SRC = main.c\
-	./src/port.c
+	src/Activity1.c\
+	src/Activity2.c\
+	src/Activity3.c\
+	src/Activity4.c
 
 
 # All header file paths
-#INC = -I inc
+INC = -I inc
 
 # Find out the OS and configure the variables accordingly
 ifdef OS	# All configurations for Windwos OS

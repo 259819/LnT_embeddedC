@@ -1,5 +1,5 @@
 /**
- * @file port.h
+ * @file Activity1.h
  * @author Preet Kamalnayan Pandit (https://github.com/259819/LnT_embeddedC.git)
  * @brief  headerfile for  port initialization
  * @version 0.1
@@ -8,9 +8,9 @@
  * @copyright Copyright (c) 2021
  * 
  */
-#ifndef PORT_H_INCLUDED
-#define PORT_H_INCLUDED
+#ifndef ACTIVITY1_H_INCLUDED
+#define ACTIVITY1_H_INCLUDED
 
-void port(); 
+int Activity1(); 
 
-#endif // PORT_H_INCLUDED
+#endif // ACTIVITY1_H_INCLUDED
