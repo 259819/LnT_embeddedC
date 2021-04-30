@@ -17,7 +17,6 @@ The whole Activity is divided into 4 sub-activities as mentioned:
 
 ### Activity 1
  Turn on led when the passenger is seated on the seat and the heater is turned on.
-
 ### Activity 2
  Measure the temperature using the temperature sensor annd the ADC of the microcontroller.
 ### Activity 3
