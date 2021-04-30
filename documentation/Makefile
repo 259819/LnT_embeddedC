@@ -1,4 +1,4 @@
-DOXY_FILE = Blinky
+DOXY_FILE = Seat_Heating_Application
 BUILD_FILE = html
 
 FixPath = $(subst /,\,$1)
