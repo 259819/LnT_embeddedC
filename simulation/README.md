@@ -1,3 +1,7 @@
+# Seat Heating Application in Action
+[Seat Heating Application](https://github.com/259819/LnT_embeddedC#seat-heating-application-in-action)
+
+
 # Activity-I In Action
 
 |OFF-OFF|OFF-ON|ON-OFF|ON-ON|
