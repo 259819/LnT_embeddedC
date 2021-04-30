@@ -1,6 +1,6 @@
 /**
  * @file Activity2.c
- * @author 259819-Preet Kamalnayan Pandit (https://github.com/259819/LnT_embeddedC.git)
+ * @author 259819-Preet Kamalnayan Pandit (preetkd2222@gmail.com)
  * @brief 
  * @version 0.1
  * @date 2021-04-27
@@ -11,16 +11,25 @@
 #include <avr/io.h>
 #include"../inc/Activity2.h"
 
+#define ADC_MULTIPLEXER            ADMUX
+#define PRESCALE_SETTING           ADCSRA
+#define ADC_ENABLE                 ADEN
+#define VOLTAGE_REFERENCE_AVcc     REFS0
+#define PRESCALE_128               ADPS0
+#define BEGIN_CONVERSION           ADSC
+#define LOWER_ADC_REGISTER         ADCL
+#define HIGHER_ADC_REGISTER        ADCH
 
-unsigned volatile int analog_value;
+
+
 /**
  * @brief initializing ADC registers
  * 
  */
 void InitADC()
 {
-    ADMUX=(1<<REFS0);                      //voltage reference=AVcc(+5V)
-    ADCSRA=(1<<ADEN)|(7<<ADPS0);           //enable ADC, PRESCALAR= 128 (i.e., freq/128)
+    ADC_MULTIPLEXER=(1<<VOLTAGE_REFERENCE_AVcc);        //voltage reference=AVcc(+5V)
+    ADCSRA=(1<<ADC_ENABLE)|(7<<PRESCALE_128);           //enable ADC, PRESCALAR= 128 (i.e., freq/128)
 
 }
 /**
@@ -29,27 +38,33 @@ void InitADC()
  * @param ch 
  * @return uint16_t 
  */
+
 uint16_t ReadADC(uint8_t ch)
 {
-
-analog_value=0;
-ADMUX&=0xF8;
+unsigned volatile int analog_value=0;
+ADC_MULTIPLEXER&=0xF8;
 ch=ch&0b00000111;
-ADMUX|=ch;                                 //selecting ADC channel
+ADC_MULTIPLEXER|=ch;                                     //selecting ADC channel
 
-ADCSRA|=(1<<ADSC);                         //begin conversion
+ADCSRA|=(1<<BEGIN_CONVERSION);                           //begin conversion
 
-while(!(ADCSRA & (1<<ADIF)));              //waiting for the conversion 
-ADCSRA|=(1<<ADIF);                         //conversion ends(interrupt bit=1) 
+while(!(ADCSRA & (1<<ADIF)));                            //waiting for the conversion 
+ADCSRA|=(1<<ADIF);                                       //conversion ends(interrupt bit=1) 
 
-analog_value=(int)ADCL+((int)ADCH)*256;   //converting binary ADC reading into decimal value
-return(analog_value);                     //returning the analog decimal value
+analog_value=(int)LOWER_ADC_REGISTER+((int)HIGHER_ADC_REGISTER)*256; 
+return(analog_value);                                   //converting binary ADC reading into decimal value 
+                                                        //returning the analog decimal value
 
 }
 
+/**
+ * @brief function returning the ADC reading to main application file
+ * 
+ * @return int 
+ */
 int Activity2()
 {
-    int a=0;
+   unsigned volatile int a=0;
     InitADC();
     a=ReadADC(0);
     return a;

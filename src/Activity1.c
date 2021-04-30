@@ -1,6 +1,6 @@
 /**
- * @file port.c
- * @author Preet Kamalnayan Pandit (https://github.com/259819/LnT_embeddedC.git)
+ * @file Activity1.c
+ * @author 259819-Preet Kamalnayan Pandit (preetkd2222@gmail.com)
  * @brief  source file for port initialization
  * @version 0.1
  * @date 2021-04-27
@@ -9,28 +9,32 @@
  * 
  */
 #include<avr/io.h>
-#include<avr/interrupt.h>
 #include"../inc/Activity1.h"
 
+#define LED_OUTPUT_PIN PD4
+#define LED_ON         PORTD|=(1<<PD4); 
+#define LED_OFF        PORTD&=~(1<<PD4);   
+#define SWITCH1_INPUT  PD0
+#define SWITCH2_INPUT  PD1
 /**
  * @brief initializing ports as input or output
  * 
  */
 int Activity1()
 {
-    DDRD|=(1<<PD4);     //port B pin LED OUTPUT
-    DDRD&=~(1<<PD0);    //CLEAR BIT
-    DDRD&=~(1<<PD1);    //CLEAR BIT
-    PORTD|=(1<<PD0);    //SET BIT -SWITCH-I INPUT
-    PORTD|=(1<<PD1);    //SET BIT -SWITCH-II INPUT
-    sei();
-    if(!(PIND&(1<<PD0)) && !(PIND&(1<<PD1)))
+    DDRD|=(1<<LED_OUTPUT_PIN);    
+    DDRD&=~(1<<SWITCH1_INPUT);    //CLEAR BIT
+    DDRD&=~(1<<SWITCH2_INPUT);    //CLEAR BIT
+    PORTD|=(1<<SWITCH1_INPUT);    //SET BIT 
+    PORTD|=(1<<SWITCH2_INPUT);    //SET BIT 
+   // sei();
+    if(!(PIND&(1<<SWITCH1_INPUT)) && !(PIND&(1<<SWITCH2_INPUT)))
         {
-            PORTD|=(1<<PD4);    //led on     
+            LED_ON;        
             return 1;
         }else
         {
-            PORTD&=~(1<<PD4);   //led off
+           LED_OFF;  
             return 0;
         }
 }

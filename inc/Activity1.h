@@ -1,6 +1,6 @@
 /**
  * @file Activity1.h
- * @author Preet Kamalnayan Pandit (https://github.com/259819/LnT_embeddedC.git)
+ * @author 259819-Preet Kamalnayan Pandit (preetkd2222gmail.com)
  * @brief  headerfile for  port initialization
  * @version 0.1
  * @date 2021-04-27

@@ -1,6 +1,6 @@
 /**
  * @file Activity3.h
- * @author 259819-Preet Kamalnayan Pandit(https://github.com/259819/LnT_embeddedC.git)
+ * @author 259819-Preet Kamalnayan Pandit(preetkd2222@gmail.com)
  * @brief 
  * @version 0.1
  * @date 2021-04-28

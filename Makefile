@@ -1,9 +1,9 @@
-PROJ_NAME = Activity1
+PROJ_NAME = Seat_Heat_App
 
 BUILD_DIR = build
 
 # All Source code files
-SRC = main.c\
+SRC = Seat_Heating_Application.c\
 	src/Activity1.c\
 	src/Activity2.c\
 	src/Activity3.c\
@@ -37,7 +37,9 @@ endif
 
 all:$(BUILD_DIR)
 # Compile the code and generate the ELF file
-	$(CC) -g -Wall -Os -mmcu=atmega328 -DF_CPU=16000000UL  $(SRC) -o $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).elf)
+	$(CC) -g -Wall -Os -mmcu=atmega328  $(SRC) -o $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).elf)
+	$(AVR_OBJ_CPY) -O ihex $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).elf) $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).hex)
+	rm $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).elf)
 
 $(BUILD_DIR):
 # Create directory to store the built files
@@ -55,3 +57,4 @@ clean:
 # Remove all the build files and generated document files
 	rm -rf $(call FixPath,$(BUILD_DIR)/*)
 	make -C documentation clean
+	

@@ -4,7 +4,7 @@
 
 |OFF-OFF|OFF-ON|ON-OFF|ON-ON|
 |:--:|:--:|:--:|:--:|
-|![off-off](https://github.com/259819/LnT_embeddedC/blob/main/simulation/Activity1-Images/off-off.PNG)|![OFF-ON](https://github.com/259819/LnT_embeddedC/blob/main/simulation/Activity1-Images/off-on.PNG)|![on-off](https://github.com/259819/LnT_embeddedC/blob/main/simulation/Activity1-Images/on-off.PNG)|![on-on](https://github.com/259819/LnT_embeddedC/blob/main/simulation/Activity1-Images/on-on.PNG)|
+|![off-off](https://github.com/259819/LnT_embeddedC/blob/main/simulation/Seat_Heating_App/Seat heating App-20 C.PNG)|![OFF-ON](https://github.com/259819/LnT_embeddedC/blob/main/simulation/Seat_Heating_App/Seat heating App-25 C.PNG)|![on-off](https://github.com/259819/LnT_embeddedC/blob/main/simulation/Seat_Heating_App/Seat heating App-29 C.PNG)|![on-on](https://github.com/259819/LnT_embeddedC/blob/main/simulation/Seat_Heating_App/Seat heating App-33 C.PNG)|
 
 ## CI and Code Quality
 

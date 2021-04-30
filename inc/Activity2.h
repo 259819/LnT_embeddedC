@@ -1,6 +1,6 @@
 /**
  * @file Activity2.h
- * @author 259819-Preet Kamalnayan Pandit(https://github.com/259819/LnT_embeddedC.git)
+ * @author 259819-Preet Kamalnayan Pandit(preetkd2222@gmail.com)
  * @brief header file for ADC conversion
  * @version 0.1
  * @date 2021-04-27
