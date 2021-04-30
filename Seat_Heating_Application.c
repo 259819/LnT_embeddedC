@@ -37,7 +37,7 @@ int main(void)
         switch_status= Activity1();
         if(switch_status==1)                                    //if both switches are on, then only ADC will work
         {                                     
-             temp=Activity2();                   
+             temp=Activity2();                                  // ADC value measured,returned and stored in temp 
              OUTPUT_COMPARE_REGISTER=Activity3(temp);           //PWM pulses will be generated only if adc is working else the pulses will be of default duty cycle
                                                                 //passing the ADC reading for the display of temperature using UART 
         }else
