@@ -23,7 +23,7 @@
 
 
 /**
- * @brief PROGRAM for complete seat heating application
+ * @brief PROGRAM for complete Seat Heating Application
  * 
  * @return int 
  */
@@ -31,7 +31,7 @@ int main(void)
 {  
     unsigned volatile int switch_status=0;
                                                                  //variable to check if both switches are ON or OFF
-     uint16_t temp=0;                                           //variable to store the ADC readings
+    uint16_t temp=0;                                           //variable to store the ADC readings
     while(1)
     {
         switch_status= Activity1();
@@ -44,22 +44,22 @@ int main(void)
         {
             OUTPUT_COMPARE_REGISTER=0x00;
         }
-        if(OCR0A>=0 && OCR0A<=52)
-           {
+        if(OUTPUT_COMPARE_REGISTER>=0 && OUTPUT_COMPARE_REGISTER<=52)
+        {
                Activity4("20 degree Celcius\n");
-           }
-        else if(OCR0A>52 && OCR0A<=103)
-           {
-              Activity4("25 degree Celcius\n");
-           }
-        else if(OCR0A>103 && OCR0A<=180)
-           {
+        }
+        else if(OUTPUT_COMPARE_REGISTER>52 && OUTPUT_COMPARE_REGISTER<=103)
+        {
+              Activity4("25 degree Celcius\n");                 //passing the temperature for displaying using UART
+        }
+        else if(OUTPUT_COMPARE_REGISTER>103 && OUTPUT_COMPARE_REGISTER<=180)
+        {
                Activity4("29 degree Celcius\n");
-           }
-        else if(OCR0A>180 && OCR0A<=244)
-           {
+        }
+        else if(OUTPUT_COMPARE_REGISTER>180 && OUTPUT_COMPARE_REGISTER<=244)
+        {
                Activity4("33 degree Celcius\n");
-           }
+        }
  
     }
 }
