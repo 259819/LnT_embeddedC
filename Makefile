@@ -14,7 +14,7 @@ SRC = Seat_Heating_Application.c\
 INC = -I inc
 
 # Find out the OS and configure the variables accordingly
-ifdef OS	# All configurations for Windwos OS
+ifdef OS	# All configurations for Windows OS
 # Correct the path based on OS
    FixPath = $(subst /,\,$1)
 # Name of the compiler used
