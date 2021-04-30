@@ -35,7 +35,7 @@ The whole Activity is divided into 4 sub-activities as mentioned:
 
 ## Seat Heating Application in Action
 
-|20% Duty Cycle,20 degree Celcius|40% Duty Cycle,25 degree Celcius|70% Duty Cycle,29 degree Celcius|95% PWM,33 degree Celcius|
+|20% Duty Cycle,20 degree Celcius|40% Duty Cycle,25 degree Celcius|70% Duty Cycle,29 degree Celcius|95% Duty Cycle,33 degree Celcius|
 |:--:|:--:|:--:|:--:|
 |![](https://github.com/259819/LnT_embeddedC/blob/main/simulation/Seat_Heating_App/Seat%20heating%20App-20%20C.PNG)|![](https://github.com/259819/LnT_embeddedC/blob/main/simulation/Seat_Heating_App/Seat%20heating%20App-25%20C.PNG)|![](https://github.com/259819/LnT_embeddedC/blob/main/simulation/Seat_Heating_App/Seat%20heating%20App-29%20C.PNG)|![](https://github.com/259819/LnT_embeddedC/blob/main/simulation/Seat_Heating_App/Seat%20heating%20App-33%20C.PNG)|
 
