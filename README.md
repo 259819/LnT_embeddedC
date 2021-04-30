@@ -1,4 +1,4 @@
-# Embedded C Programming Examples with Continuous Integration and Code Quality
+# Embedded C Programming Example with Continuous Integration and Code Quality
 
 # Activity - Seat Heating Application 
 
